@@ -10,7 +10,7 @@ interface BottomNavBarProps {}
 
 export const BottomNav: React.FC<BottomNavBarProps> = () => {
   return (
-    <div className='fixed bottom-0 left-0 w-full bg-white border-t border-b-1 sm:hidden'>
+    <div className='fixed bottom-0 left-0 w-full bg-muted border-t border-b-1 sm:hidden'>
       <div className='flex justify-between py-2 mx-8'>
         <button className='flex flex-col items-center p-2'>
           <HomeIcon className='h-6 text-[#8000FF]' />

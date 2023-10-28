@@ -24,7 +24,7 @@ export const Nav: React.FC<NavProps> = () => {
 
   return (
     <>
-      <div className='fixed left-0 top-0 z-50 w-full bg-white border-b border-b-1'>
+      <div className='fixed left-0 top-0 z-50 w-full border-b border-b-1'>
         <header className='flex min-h-[4rem] w-full max-w-screen-xl items-center justify-between px-4 text-black sm:px-8 relative mx-auto flex-wrap'>
           <a
             className='flex h-16 w-40 flex-none items-center space-x-6'
@@ -43,7 +43,7 @@ export const Nav: React.FC<NavProps> = () => {
             <Bag height={22} width={23} />
             <UserCircleIcon className='h-7' />
           </div>
-          <div className='sm:hidden flex items-center justify-end pr-4'>
+          <div className='sm:hidden flex items-center justify-end'>
             <button
               onClick={() => (menuOpen ? closeMenu() : openMenu())}
               className='text-2xl text-gray-700 hover:text-gray-900'
