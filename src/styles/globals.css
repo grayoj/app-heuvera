@@ -3,25 +3,76 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --animate-duration: 10000ms;
+  --animate-delay: 0.1s;
+
+  --heuvera-bg-emphasis: #e5e7eb;
+  --heuvera-bg: white;
+  --heuvera-bg-subtle: #f3f4f6;
+  --heuvera-bg-muted: #f9fafb;
+  --heuvera-bg-inverted: #111827;
+
+  --heuvera-bg-info: #dee9fc;
+  --heuvera-bg-success: #e2fbe8;
+  --heuvera-bg-attention: #fceed8;
+  --heuvera-bg-error: #f9e3e2;
+  --heuvera-bg-dark-error: #752522;
+
+  --heuvera-border-emphasis: #9ca3af;
+  --heuvera-border: #d1d5db;
+  --heuvera-border-subtle: #e5e7eb;
+  --heuvera-border-booker: #e5e7eb;
+  --heuvera-border-muted: #f3f4f6;
+  --heuvera-border-error: #aa2e26;
+
+  --heuvera-text-emphasis: #111827;
+  --heuvera-text: #374151;
+  --heuvera-text-subtle: #6b7280;
+  --heuvera-text-muted: #9ca3af;
+  --heuvera-text-inverted: white;
+
+  --heuvera-text-info: #253985;
+  --heuvera-text-success: #285231;
+  --heuvera-text-attention: #73321b;
+  --heuvera-text-error: #752522;
+
+  --heuvera-brand: #111827;
+  --heuvera-brand-emphasis: #101010;
+  --heuvera-brand-text: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+.dark {
+  --heuvera-bg-emphasis: #2b2b2b;
+  --heuvera-bg: #101010;
+  --heuvera-bg-subtle: #2b2b2b;
+  --heuvera-bg-muted: #1c1c1c;
+  --heuvera-bg-inverted: #f3f4f6;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  --heuvera-bg-info: #263fa9;
+  --heuvera-bg-success: #306339;
+  --heuvera-bg-attention: #8e3b1f;
+  --heuvera-bg-error: #8c2822;
+  --heuvera-bg-dark-error: #752522;
+
+  --heuvera-border-emphasis: #575757;
+  --heuvera-border: #444444;
+  --heuvera-border-subtle: #2b2b2b;
+  --heuvera-border-booker: #2b2b2b;
+  --heuvera-border-muted: #1c1c1c;
+  --heuvera-border-error: #aa2e26;
+
+  --heuvera-text-emphasis: #f3f4f6;
+  --heuvera-text: #d6d6d6;
+  --heuvera-text-subtle: #a5a5a5;
+  --heuvera-text-muted: #575757;
+  --heuvera-text-inverted: #101010;
+
+  --heuvera-text-info: #dee9fc;
+  --heuvera-text-success: #e2fbe8;
+  --heuvera-text-attention: #fceed8;
+  --heuvera-text-error: #f9e3e2;
+
+  --heuvera-brand: white;
+  --heuvera-brand-emphasis: #e1e1e1;
+  --heuvera-brand-text: black;
 }
