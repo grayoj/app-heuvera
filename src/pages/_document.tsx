@@ -68,7 +68,7 @@ export default function Document() {
         />
         <script id='theme-script' data-nscript='beforeInteractive' />
       </Head>
-      <body className='bg-subtle antialiased'>
+      <body className='bg-white antialiased'>
         <Main />
         <NextScript />
       </body>

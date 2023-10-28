@@ -76,3 +76,7 @@
   --heuvera-brand-emphasis: #e1e1e1;
   --heuvera-brand-text: black;
 }
+
+li:hover div {
+  width: 100%;
+}
