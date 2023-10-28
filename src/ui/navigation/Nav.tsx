@@ -24,7 +24,7 @@ export const Nav: React.FC<NavProps> = () => {
 
   return (
     <>
-      <div className='left-0 top-0 fixed z-50 w-full bg-white border-b border-b-1'>
+      <div className='fixed left-0 top-0 z-50 w-full bg-white border-b border-b-1'>
         <header className='flex min-h-[4rem] w-full max-w-screen-xl items-center justify-between px-4 text-black sm:px-8 relative mx-auto flex-wrap'>
           <a
             className='flex h-16 w-40 flex-none items-center space-x-6'
