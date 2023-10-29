@@ -48,7 +48,17 @@ export const MarketplaceGrid: React.FC<MarketplaceGridProps> = () => {
   ];
 
   return (
-    <div className="my-40 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+    <div
+      className="
+    my-2 
+    sm:my-5
+    grid grid-cols-1
+    sm:grid-cols-2
+    md:grid-cols-3
+    lg:grid-cols-4
+    xl:grid-cols-5
+    gap-4"
+    >
       {cards.map((card, index) => (
         <div key={index} className="col-span-1">
           <MarketplaceCard {...card} />

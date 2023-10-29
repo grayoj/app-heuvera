@@ -52,6 +52,7 @@ export const Nav: React.FC<NavProps> = () => {
             </button>
           </div>
         </header>
+        <hr className="mt-3 hidden sm:block" />
         <div
           className={`fixed inset-0 flex items-center justify-center bg-[#8000FF] text-white animate__animated ${
             menuOpen ? "animate__fadeInUp" : "animate__fadeOutDown"
@@ -81,13 +82,13 @@ export const Nav: React.FC<NavProps> = () => {
         </div>
         <div className="my-4 justify-center items-center hidden sm:block">
           <div className="flex justify-center space-x-6 text-sm cursor-pointer">
-            <a className="text-gray-700 hover-text-gray-900 bg-subtle p-2 rounded-md border border-1">
+            <a className="text-gray-700 hover-text-gray-900 p-2 rounded-md border border-1">
               Student Homes
             </a>
-            <a className="text-gray-700 hover-text-gray-900 bg-white p-2 rounded-md">
+            <a className="text-gray-700 hover-text-gray-900 bg-white p-2 rounded-sm">
               Apartments
             </a>
-            <a className="text-gray-700 hover-text-gray-900 bg-white p-2 rounded-md">
+            <a className="text-gray-700 hover-text-gray-900 bg-white p-2 rounded-sm">
               Office Workspaces
             </a>
           </div>
