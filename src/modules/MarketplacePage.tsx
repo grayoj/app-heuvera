@@ -1,8 +1,9 @@
-import useLoadingDelay from '@/hooks/useLoadingDelay';
-import { Loader } from '@/ui/loaders/Loader';
-import { BottomNav } from '@/ui/navigation/BottomNav';
-import { Nav } from '@/ui/navigation/Nav';
-import React from 'react';
+import useLoadingDelay from "@/hooks/useLoadingDelay";
+import { Loader } from "@/components/loaders/Loader";
+import { BottomNav } from "@/components/navigation/BottomNav";
+import { Nav } from "@/components/navigation/Nav";
+import React from "react";
+import { MarketplaceGrid } from "@/components/grids/MarketplaceGrid";
 
 interface MarketplacePageProps {}
 
@@ -15,6 +16,7 @@ export const MarketplacePage: React.FC<MarketplacePageProps> = () => {
       ) : (
         <>
           <Nav />
+          <MarketplaceGrid />
           <BottomNav />
         </>
       )}
