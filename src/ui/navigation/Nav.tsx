@@ -13,6 +13,7 @@ interface NavProps {}
 
 export const Nav: React.FC<NavProps> = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [userMenuOpen, setUserMenuOpen] = useState(false);
 
   const closeMenu = () => {
     setMenuOpen(false);
@@ -20,6 +21,14 @@ export const Nav: React.FC<NavProps> = () => {
 
   const openMenu = () => {
     setMenuOpen(true);
+  };
+
+  const closeUserMenu = () => {
+    setUserMenuOpen(false);
+  };
+
+  const openUserMenu = () => {
+    setUserMenuOpen(true);
   };
 
   return (
@@ -41,7 +50,14 @@ export const Nav: React.FC<NavProps> = () => {
           </div>
           <div className='hidden sm:flex h-16 w-40 flex-none items-center justify-end space-x-4'>
             <Bag height={22} width={23} />
-            <UserCircleIcon className='h-7' />
+            <button onClick={openUserMenu}>
+              <UserCircleIcon className='h-7' />
+            </button>
+            {userMenuOpen && (
+              <div className='absolute top-12 right-4 bg-white text-black rounded-md border border-gray-300 py-2 px-4'>
+                <a>My Profile</a>
+              </div>
+            )}
           </div>
           <div className='sm:hidden flex items-center justify-end'>
             <button
